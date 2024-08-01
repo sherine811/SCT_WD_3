@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="theme-toggle">Toggle Theme</button>
+    <div class="container">
+        <img src="tictac.jpg" alt="Tic Tac Toe" class="title-image">
+        <h1>Tic-Tac-Toe</h1>
+        <div id="game-info">
+            <p>Tic-Tac-Toe in a nutshell:</p>
+            <ul>
+                <li><strong>Purpose:</strong> for players to place their 3 allotted marks (X or O) in a continuous line, vertically, horizontally, or diagonally.</li>
+                <li><strong>Rules:</strong> each player chooses a mark and takes turns to place them on the grid. The game is over when a player gets a continuous line of 3, or the 9-square grid is full.</li>
+                <li><strong>How to play:</strong> players take turns to place their marks in an attempt to get a continuous line of 3 cells.</li>
+            </ul>
+        </div>
+        <div class="box">
+            <div id="mode-selection">
+                <button id="two-player-mode">Two Player</button>
+                <button id="computer-mode">Play vs Computer</button>
+            </div>
+        </div>
+        <div id="game-container"></div>
+        <button id="restart" style="display: none;">Restart</button>
+        <button id="new-game" style="display: none;">New Game</button>
+        <p id="message"></p>
+        <p id="score">Player X: 0 | Player O: 0</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

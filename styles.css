@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.title-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#game-info {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#game-info ul {
+    padding-left: 20px;
+}
+
+#game-info li {
+    margin-bottom: 10px;
+}
+
+.box {
+    margin: 10px auto;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#mode-selection {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+body.dark-mode button {
+    border-color: #fff;
+}
+
+body.dark-mode button:hover {
+    background-color: #555;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 10px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.2s;
+}
+
+.cell:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+body.dark-mode .cell {
+    border-color: #fff;
+}
+
+body.dark-mode .cell:hover {
+    background-color: #555;
+}
+
+#restart, #new-game {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#restart:hover, #new-game:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+#message, #score {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
